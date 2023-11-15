@@ -5,7 +5,7 @@ import { useLocalStorage } from "./hooks/useLocalStorage";
 import Modal from "./components/modal";
 
 const app = () => {
-  const { readLS, writeLS, removeLS } = useLocalStorage();
+  const { readLS, writeLS, removeLS } = useLocalStorage(); //отправку на сервер не делал, сделал через локалсторадж.
   const user = readLS("user");
   const [isOpen, setIsOpen] = useState(!user);
 
